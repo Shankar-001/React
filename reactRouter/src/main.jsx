@@ -7,7 +7,7 @@ import {
   RouterProvider,
 } from 'react-router-dom';
 import About from './components/About/About.jsx';
-import Contact from './components/Contact/contact.jsx';
+import Contact from './components/Contact/Contact.jsx';
 import Github, { githubInfoLoader } from './components/Github/Github.jsx';
 import Home from './components/Home/Home.jsx';
 import User from './components/User/User.jsx';

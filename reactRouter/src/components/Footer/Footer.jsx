@@ -1,6 +1,13 @@
-import { Link, NavLink } from 'react-router-dom';
+import { useEffect } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
 
 function Footer() {
+  const location = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+  
   return (
     <footer className="bg-white border-y">
       <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
